@@ -10,6 +10,7 @@
     "prepare": "husky",
     "check-deps": "ncu --workspaces",
     "update-deps": "ncu -u --workspaces",
+    "update-deps-i": "ncu -i --workspaces",
     "ci:is-working": "pnpm lint && pnpm check-types && pnpm build",
     "ci:format": "lint-staged",
     "ci:check-updates": "pnpm check-deps"
@@ -25,14 +26,14 @@
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
     "npm-check-updates": "^19.1.2",
-    "prettier": "^3.6.0",
-    "prettier-plugin-tailwindcss": "^0.6.11",
-    "turbo": "^2.5.8"
+    "prettier": "^3.6.2",
+    "prettier-plugin-tailwindcss": "^0.7.1",
+    "turbo": "^2.6.1"
   },
   "lint-staged": {
     "**/*.{ts,tsx,md,json,yaml,css,js,jsx}": [
-      "pnpm format",
-      "git add ."
+      "prettier --write",
+      "git add"
     ]
   },
   "packageManager": "pnpm@10.22.0",
