@@ -21,13 +21,13 @@
     ]
   },
   "devDependencies": {
-    "@commitlint/cli": "^20.1.0",
-    "@commitlint/config-conventional": "^20.0.0",
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
     "husky": "^9.1.7",
     "lint-staged": "^16.2.7",
-    "npm-check-updates": "^19.1.2",
-    "prettier": "^3.6.2",
-    "prettier-plugin-tailwindcss": "^0.7.1",
+    "npm-check-updates": "^19.3.2",
+    "prettier": "^3.8.1",
+    "prettier-plugin-tailwindcss": "^0.7.2",
     "turbo": "^2.6.1"
   },
   "lint-staged": {
@@ -36,7 +36,7 @@
       "git add"
     ]
   },
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.29.2",
   "engines": {
     "node": "24.11.0"
   }
