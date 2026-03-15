@@ -1,0 +1,6 @@
+{
+  "name": "parish-cloud",
+  "compatibility_date": "2025-03-15",
+  // Add bindings here as needed, e.g.:
+  // "kv_namespaces": [{ "binding": "MY_KV", "id": "<namespace_id>" }]
+}

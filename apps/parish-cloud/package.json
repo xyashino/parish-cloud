@@ -7,18 +7,27 @@
     "node": ">=22.12.0"
   },
   "scripts": {
-    "dev": "astro dev --port 3002",
-    "build": "astro build",
-    "preview": "astro preview",
+    "dev": "wrangler types && astro dev --port 3002",
+    "build": "wrangler types && astro check && astro build",
+    "preview": "wrangler types && astro preview",
     "astro": "astro",
     "lint": "echo 'No lint for now'",
     "check-types": "astro check"
   },
   "dependencies": {
-    "astro": "^6.0.4"
+    "@astrojs/cloudflare": "^13.1.1",
+    "@astrojs/react": "^5.0.0",
+    "astro": "^6.0.4",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
-    "typescript": "5.9.3"
+    "@tailwindcss/vite": "^4.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.0",
+    "typescript": "5.9.3",
+    "wrangler": "^4.73.0"
   }
 }
