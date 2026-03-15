@@ -1,7 +1,9 @@
 {
-  "name": "with-tailwind",
+  "name": "parish-cloud-workspace",
   "private": true,
   "scripts": {
+    "dev:parish-cloud": "turbo run dev --filter parish-cloud",
+    "build:parish-cloud": "turbo run build --filter parish-cloud",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",

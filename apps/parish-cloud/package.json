@@ -1,0 +1,24 @@
+{
+  "name": "parish-cloud",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev --port 3002",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "echo 'No lint for now'",
+    "check-types": "astro check"
+  },
+  "dependencies": {
+    "astro": "^6.0.4"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.4",
+    "typescript": "5.9.3"
+  }
+}
