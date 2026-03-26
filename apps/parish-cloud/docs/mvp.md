@@ -94,15 +94,15 @@ Each provisioned website has its own isolated TinaCMS editor. All actual site ma
 
 #### 4. Automated Technical Pipeline
 
-15. **Isolated Git Repositories** — A new Git repo (forked from a master Astro Template app inside our Turborepo) is automatically generated via API for _every single site_ created, ensuring data isolation and easy global template updates.
-16. **Self-Hosted Tina Backend** — Each site runs our own Astro API backend for TinaCMS, avoiding expensive 3rd-party CMS subscription limits and keeping Auth fully under our control.
-17. **Hybrid Rendering (ISR) Pipeline** — The deployed Astro app uses Hybrid rendering. Core layouts are statically generated (SSG) for zero-cost caching, while dynamic content fetches use ISR (Stale-While-Revalidate) so Priests see their updates instantly without waiting for CI/CD build webhooks.
+14. **Isolated Git Repositories** — A new Git repo (forked from a master Astro Template app inside our Turborepo) is automatically generated via API for _every single site_ created, ensuring data isolation and easy global template updates.
+15. **Self-Hosted Tina Backend** — Each site runs our own Astro API backend for TinaCMS, avoiding expensive 3rd-party CMS subscription limits and keeping Auth fully under our control.
+16. **Hybrid Rendering (ISR) Pipeline** — The deployed Astro app uses Hybrid rendering. Core layouts are statically generated (SSG) for zero-cost caching, while dynamic content fetches use ISR (Stale-While-Revalidate) so Priests see their updates instantly without waiting for CI/CD build webhooks.
 
 ### Visual App Flow (Mermaid)
 
 #### Multi-Site Architecture & Flow
 
-```merzmaid
+```mermaid
 flowchart LR
     subgraph MainDashboard["Main Dashboard (Site Manager Hub)"]
         Hub[List of Priest's Sites]

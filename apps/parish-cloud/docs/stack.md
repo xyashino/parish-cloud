@@ -28,7 +28,14 @@ updated: 26.03.2026
 
 ### TanStack Query
 
-- **Why:** Best-in-class data fetching, automatic caching, optimistic updates, perfect Supabase integration
+- **Why:** Standardized async state management, request caching, retries, background refetching, and predictable loading/error UX for dashboard features.
+- **Target state:** Default query/mutation layer for dashboard data flows.
+
+### Supabase Client (`@supabase/supabase-js`)
+
+- **Why:** Type-safe Postgres access, auth/session helpers, and one SDK for browser + server usage in Astro.
+- **Current state:** Client is configured in-app (`src/lib/supabase.ts`) and consumed directly where needed.
+- **With TanStack Query:** Supabase calls are wrapped in query/mutation hooks to keep data access consistent.
 
 ---
 
@@ -65,7 +72,8 @@ updated: 26.03.2026
 
 ### Supabase Auth
 
-- **Why:** Built-in, $0 cost, Google OAuth + Email/Password, works with RLS
+- **Why:** Built-in auth tightly integrated with RLS and PostgreSQL.
+- **Current state:** Email/password flow is being implemented incrementally; OAuth providers are planned next.
 
 ### Astro API Routes
 
