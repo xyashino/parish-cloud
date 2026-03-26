@@ -38,8 +38,11 @@
       "git add"
     ]
   },
-  "packageManager": "pnpm@10.22.0",
+  "packageManager": "pnpm@10.33.0",
   "engines": {
     "node": "24.11.0"
+  },
+  "volta": {
+    "node": "24.14.1"
   }
 }

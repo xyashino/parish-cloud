@@ -8,15 +8,21 @@
   },
   "scripts": {
     "dev": "wrangler types && astro dev --port 3002",
+    "dev:docker": "pnpm supabase:start && pnpm dev",
     "build": "wrangler types && astro check && astro build",
     "preview": "wrangler types && astro preview",
     "astro": "astro",
     "lint": "echo 'No lint for now'",
-    "check-types": "astro check"
+    "check-types": "astro check",
+    "supabase:start": "pnpm dlx supabase@latest start",
+    "supabase:stop": "pnpm dlx supabase@latest stop",
+    "supabase:status": "pnpm dlx supabase@latest status",
+    "supabase:restart": "pnpm supabase:stop && pnpm supabase:start"
   },
   "dependencies": {
     "@astrojs/cloudflare": "^13.1.1",
     "@astrojs/react": "^5.0.0",
+    "@supabase/supabase-js": "^2.100.0",
     "astro": "^6.0.4",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
